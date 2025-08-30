@@ -1,21 +1,25 @@
 # Java Learning Repository
 
-This repository contains my Java practice programs and assignments.  
-The goal is to strengthen my understanding of **Java fundamentals, OOP, and problem solving**.
+This repository contains my **Java practice programs and assignments**, created to strengthen my understanding of **Java fundamentals, OOP, and problem-solving**.
 
-## 📂 Structure
-- **basics/** → Introductory programs (methods, variables, loops, etc.)
-updated every week 😊
--RWOEmployee.java
--RWOStudent.java
--MethodWorkingExample.java
+## 📂 Repository Structure
 
+```
+basics/       → Introductory programs (variables, methods, loops, etc.)  
+   ├─ RWOEmployee.java  
+   ├─ RWOStudent.java  
+   └─ MethodWorkingExample.java  
+```
 
-## 🚀 What's inside?
-- Student & College demo (methods, static vs instance variables)
+*(Updated weekly 😊)*
 
+## 🚀 What's Inside?
+
+* Student & College demo
+* Examples of methods, static vs instance variables
+* Hands-on OOP practice programs
 
 ## 🎯 Purpose
-It’s meant to track my **learning journey** in Java step by step.
 
+This repo is a **step-by-step tracker of my Java learning journey**, from basics to advanced concepts.
 
