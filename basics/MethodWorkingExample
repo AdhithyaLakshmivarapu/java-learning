@@ -1,0 +1,60 @@
+class Example{
+    int x=10;
+    int y=20;
+
+    void m1(int z){
+        z=40;
+    }
+    void m2(Example e){
+        e.x=20;
+        e.y=10;
+    }
+    void m3(Example e){
+        e = new Example();
+        e.x =100;
+        e.y =200;
+    }
+    void m4(Example e){
+        e.x=100;
+        e.y=200;
+        e = new Example();
+        e.x= 1000;
+        e.y=2000;
+    }
+
+}
+class MethodWorkingExample{
+    public static void main(String[] args) {
+        int z = 30;
+        Example e = new Example();
+        System.out.println("Value Of Z: \t\t\t\t\t\t\t\t\t" + z);
+        e.m1(z);
+        /*
+        because method memory is destroyed after method termination the value of Z is Unchanged
+         */
+        System.out.println("Value Of Z After Passing To Method1:\t\t\t"+ z+"\n");
+        System.out.println("Initial X and Y Values=\t\t\t\t\t\t\t"+ e.x+ " "+e.y);
+        e.m2(e);
+        /*
+        here we are changing the same object values, so the changes are visible even after the method ends
+         */
+        System.out.println("X and Y Values After Method 2:\t\t\t\t\t"+ e.x + " " + e.y + "\n");
+        System.out.println("X and Y Values Before Method 3=\t\t\t\t\t"+ e.x+ " "+e.y);
+        e.m3(e);
+        /*
+        here a new object is created inside the method, but main method still points to the old object, so no effect outside
+         */
+        System.out.println("X and Y Values After Method 3=\t\t\t\t\t"+ e.x+ " "+e.y+"\n");
+
+        System.out.println("X and Y Values Before Method 4=\t\t\t\t\t"+ e.x+ " "+e.y);
+        e.m4(e);
+        /*
+        first the old object is updated (so changes are visible), but then a new object is created inside the method.
+        that new object is lost after method ends, so main still sees the first changes only
+         */
+        System.out.println("X and Y Values After Method 3=\t\t\t\t\t"+ e.x+ " "+e.y);
+
+
+
+    }
+}

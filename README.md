@@ -6,6 +6,9 @@ The goal is to strengthen my understanding of **Java fundamentals, OOP, and prob
 ## 📂 Structure
 - **basics/** → Introductory programs (methods, variables, loops, etc.)
 updated every week 😊
+-RWOEmployee.java
+-RWOStudent.java
+-MethodWorkingExample.java
 
 
 ## 🚀 What's inside?
