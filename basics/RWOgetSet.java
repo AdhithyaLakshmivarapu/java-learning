@@ -1,8 +1,8 @@
 class Example{
-    int empNO;
-    String eName;
-    double sal;
-    String dept;
+    private int empNO;
+    private String eName;
+    private double sal;
+    private String dept;
 
     void setEmpNO(int empNO){
         this.empNO=empNO;
