@@ -8,6 +8,7 @@ This repository contains my **Java practice programs and assignments**, created 
 basics/       → Introductory programs (variables, methods, loops, etc.)  
    ├─ RWOEmployee.java  
    ├─ RWOStudent.java  
+   ├─ RWOgetSet.java
    └─ MethodWorkingExample.java  
 ```
 
@@ -15,9 +16,10 @@ basics/       → Introductory programs (variables, methods, loops, etc.)
 
 ## 🚀 What's Inside?
 
-* Student & College demo
+#Basics Folder
 * Examples of methods, static vs instance variables
 * Hands-on OOP practice programs
+* Getter Setter Methods
 
 ## 🎯 Purpose
 
